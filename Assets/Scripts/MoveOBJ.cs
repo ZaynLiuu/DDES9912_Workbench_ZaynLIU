@@ -8,14 +8,13 @@ public class MoveOBJ : MonoBehaviour
     Vector3 targetPos;
     bool isMove = false;
     public float duration = 1.5f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         startPos = transform.localPosition;
         targetPos = new Vector3(1, startPos.y, startPos.z);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -56,6 +55,7 @@ public class MoveOBJ : MonoBehaviour
                 yield return null;
             }
             button.gameObject.SetActive(true);
+
         }
         isMove = !isMove;
     }

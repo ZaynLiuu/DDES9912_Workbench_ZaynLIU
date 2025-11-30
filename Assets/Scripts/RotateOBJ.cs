@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class RotateOBJ : MonoBehaviour
 {
@@ -21,7 +20,6 @@ public class RotateOBJ : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            print("click!!!");
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -41,7 +39,6 @@ public class RotateOBJ : MonoBehaviour
             }
         }
     }
-    public ParticleSystem ps1, ps2;
     IEnumerator RotateTo(Quaternion targetRotation)
     {
         isRotating = true;
@@ -55,8 +52,7 @@ public class RotateOBJ : MonoBehaviour
         }
         transform.rotation = targetRotation;
         yield return new WaitForSeconds(2);
-        ps1.Play();
-        ps2.Play();
+
         time = 0f;
         while (time < duration)
         {
@@ -65,8 +61,29 @@ public class RotateOBJ : MonoBehaviour
             yield return null;
         }
         transform.rotation = startRot;
-        isRotating=false;
-        ps1.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);
-        ps2.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);
+        isRotating = false;
+
+        coffee1.gameObject.SetActive(true);
+        coffee2.gameObject.SetActive(true);
+        GameManager.instance.isCoffeeDrop = true;
+        if (GameManager.instance.isCoffeeDrop && GameManager.instance.isCup1Right)
+        {
+            aud.Play();
+            yield return new WaitForSeconds(2);
+            cup1.gameObject.SetActive(true);
+        }
+        if (GameManager.instance.isCoffeeDrop && GameManager.instance.isCup2Right)
+        {
+            aud.Play();
+            yield return new WaitForSeconds(2);
+            cup2.gameObject.SetActive(true);
+        }
+        yield return new WaitForSeconds(11);
+        coffee1.gameObject.SetActive(false);
+        coffee2.gameObject.SetActive(false);
+        GameManager.instance.isCoffeeDrop = false;
     }
+    public GameObject coffee1, coffee2;
+    public AudioSource aud;
+    public Transform cup1, cup2;
 }

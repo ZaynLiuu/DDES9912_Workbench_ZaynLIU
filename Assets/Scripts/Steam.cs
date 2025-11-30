@@ -3,10 +3,18 @@ using UnityEngine;
 public class Steam : MonoBehaviour
 {
     public ParticleSystem ps;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Transform MilkCup;
+    bool milkCupIsMove = false;
+    public AudioSource aud;
+
+    Vector3 targetPos;
+    Vector3 startPos;
     void Start()
     {
+        if (MilkCup) startPos = MilkCup.position;
+        targetPos = new Vector3(0.814700007f, -0.526499987f, -0.44569999f);
 
+        aud = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -27,10 +35,25 @@ public class Steam : MonoBehaviour
                     }
                     else
                     {
-                        ps.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);
+                        ps.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+                    }
+
+                    if (MilkCup)
+                    {
+                        if (milkCupIsMove)
+                        {
+                            MilkCup.position = startPos;
+                            milkCupIsMove = false;
+                            aud.Stop();
+                        }
+                        else
+                        {
+                            MilkCup.position = targetPos;
+                            milkCupIsMove = true;
+                            aud.Play();
+                        }
                     }
                 }
-
             }
         }
     }
