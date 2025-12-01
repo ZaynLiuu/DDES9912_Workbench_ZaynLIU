@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 157522640}
   - component: {fileID: 157522639}
   m_Layer: 0
-  m_Name: a
+  m_Name: U3D CAFE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -838,7 +838,8 @@ Transform:
   m_LocalPosition: {x: 0.838, y: -0.706, z: 0.535}
   m_LocalScale: {x: 3.5942638, y: 0.4417, z: -0.1722848}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2120590722}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &165080963
@@ -925,7 +926,7 @@ GameObject:
   - component: {fileID: 233892493}
   - component: {fileID: 233892494}
   m_Layer: 0
-  m_Name: GroupHead
+  m_Name: GroupHead Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1227,7 +1228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 242963415}
   m_Layer: 0
-  m_Name: GroupHead (2)
+  m_Name: GroupHead Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1376,7 +1377,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 268508938848858109, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
       propertyPath: m_Name
-      value: Snap Teleport Anchor
+      value: Service table
       objectReference: {fileID: 0}
     - target: {fileID: 358833092046452919, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
       propertyPath: m_IsActive
@@ -1448,7 +1449,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6707876468356395517, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1312532904}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
 --- !u!1001 &301570712
@@ -1517,7 +1521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6751922006659825679, guid: d764e61fd3a6942408293be6e9bce776, type: 3}
       propertyPath: m_Name
-      value: Cupcake Trolley
+      value: Coffee cart
       objectReference: {fileID: 0}
     - target: {fileID: 8567546501631441618, guid: d764e61fd3a6942408293be6e9bce776, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -2241,7 +2245,7 @@ GameObject:
   - component: {fileID: 484989357}
   - component: {fileID: 484989356}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3626,7 +3630,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 433352298438955083, guid: b103022f4c636974db9547047307a646, type: 3}
       propertyPath: m_Name
-      value: "\u4EBA"
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 2233453400832040265, guid: b103022f4c636974db9547047307a646, type: 3}
       propertyPath: m_Enabled
@@ -5886,13 +5890,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312532899}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.922, y: 0.005, z: -0.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.62200004, y: 0.954, z: -0.17743826}
   m_LocalScale: {x: 0.61546, y: 0.26889, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 862781443}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2144545115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1335232442
 GameObject:
@@ -10845,7 +10849,7 @@ GameObject:
   - component: {fileID: 1379046649}
   - component: {fileID: 1379046650}
   m_Layer: 0
-  m_Name: "\u5496\u5561\u6DB2\u5DE6"
+  m_Name: Coffee Liquid Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11542,7 +11546,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f147cf74f599309408a379ccdf9ebb8a, type: 2}
     - target: {fileID: 919132149155446097, guid: 73b694bb0f61cd14e9e1ed7b578ac09a, type: 3}
       propertyPath: m_Name
-      value: "\u5976\u7F38"
+      value: MilkPitcher
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11579,7 +11583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1454433209}
   m_Layer: 0
-  m_Name: GroupHead (1)
+  m_Name: GroupHead Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11631,7 +11635,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464182049}
   m_LocalRotation: {x: -0.00040117794, y: 0.99926853, z: -0.03823954, w: -0.000015352089}
-  m_LocalPosition: {x: 0, y: 0, z: 0.633}
+  m_LocalPosition: {x: 0, y: 0, z: 0.641}
   m_LocalScale: {x: 0.009347688, y: 0.008632302, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11639,7 +11643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 4.383, y: 180, z: -0.046}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662.32886, y: -301.2439}
+  m_AnchoredPosition: {x: -603.8391, y: -292.2967}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464182051
@@ -11727,7 +11731,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 2.6647263, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11836,7 +11840,7 @@ GameObject:
   - component: {fileID: 1483828116}
   - component: {fileID: 1483828122}
   m_Layer: 0
-  m_Name: "\u53F3\u4FA7\u6C34\u7BA1"
+  m_Name: SteamWand Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15005,7 +15009,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1464182050}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 157522642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15096,7 +15100,7 @@ GameObject:
   - component: {fileID: 2138805965}
   - component: {fileID: 2138805966}
   m_Layer: 0
-  m_Name: "\u5496\u5561\u6DB2\u53F3"
+  m_Name: Coffee Liquid Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15134,6 +15138,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CoffeeL
   moveDuration: 1
   waitTime: 0.2
+--- !u!4 &2144545115 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6707876468356395517, guid: 037ba65d346be2a48ad006b9a9a3873e, type: 3}
+  m_PrefabInstance: {fileID: 288904950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!33 &173390502388106295
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15259,7 +15268,7 @@ GameObject:
   - component: {fileID: 3469287837077774456}
   - component: {fileID: 3469287837077774458}
   m_Layer: 0
-  m_Name: SteamWand
+  m_Name: SteamWand Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21500,7 +21509,6 @@ SceneRoots:
   - {fileID: 346126606}
   - {fileID: 1501870450}
   - {fileID: 484989359}
-  - {fileID: 1312532904}
   - {fileID: 1470681295}
   - {fileID: 1375219986}
   - {fileID: 1436303586}
@@ -21508,4 +21516,3 @@ SceneRoots:
   - {fileID: 288904950}
   - {fileID: 837269605}
   - {fileID: 157522642}
-  - {fileID: 2120590722}
