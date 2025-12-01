@@ -48,6 +48,10 @@ public class RotateOBJ : MonoBehaviour
         {
             transform.rotation = Quaternion.Lerp(startRot, targetRotation, time / duration);
             time += Time.deltaTime;
+            if (time>1&&selfAud.isPlaying==false)
+            {
+                selfAud.Play();
+            }
             yield return null;
         }
         transform.rotation = targetRotation;
@@ -86,4 +90,6 @@ public class RotateOBJ : MonoBehaviour
     public GameObject coffee1, coffee2;
     public AudioSource aud;
     public Transform cup1, cup2;
+
+    public AudioSource selfAud;
 }
